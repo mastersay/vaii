@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile &amp; Badges · Water Reminder</title>
+  <meta name="description" content="Public profile, avatar and earned badges.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="flex min-h-dvh flex-col bg-white font-sans text-gray-900 antialiased">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <div class="app-sidebar">
+    <header class="app-header">
+      <a href="index.html" class="brand">
+        <svg class="size-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 10.1 5 12 5 15a7 7 0 0 0 7 7z"/></svg>
+        <span class="brand-name">Water Reminder</span>
+      </a>
+
+      <nav class="sidebar-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <span class="nav-label">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="statistics.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+              <span class="nav-label">Statistics</span>
+            </a>
+          </li>
+          <li>
+            <a href="log.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg>
+              <span class="nav-label">Log</span>
+            </a>
+          </li>
+          <li>
+            <a href="events.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              <span class="nav-label">Events</span>
+            </a>
+          </li>
+          <li>
+            <a href="groups.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <span class="nav-label">Groups</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" class="nav-link" aria-current="page">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+              <span class="nav-label">Profile &amp; Badges</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+              <span class="nav-label">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="profile.html" class="user-card hidden md:flex">
+        <span class="avatar" aria-hidden="true">AM</span>
+        <span class="user-card-text">
+          <span class="block text-sm font-semibold text-gray-900">Alex M.</span>
+          <span class="block text-xs text-gray-500">Sync on</span>
+        </span>
+        <svg class="user-card-chevron size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+      </a>
+
+      <details class="mobile-menu group">
+        <summary class="icon-btn">
+          <svg class="size-6 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+          <svg class="hidden size-6 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          <span class="sr-only">Menu</span>
+        </summary>
+        <div class="mobile-menu-panel">
+          <nav aria-label="Main menu">
+            <ul class="nav-list">
+              <li>
+                <a href="index.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  <span class="nav-label">Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="statistics.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+                  <span class="nav-label">Statistics</span>
+                </a>
+              </li>
+              <li>
+                <a href="log.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg>
+                  <span class="nav-label">Log</span>
+                </a>
+              </li>
+              <li>
+                <a href="events.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                  <span class="nav-label">Events</span>
+                </a>
+              </li>
+              <li>
+                <a href="groups.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  <span class="nav-label">Groups</span>
+                </a>
+              </li>
+              <li>
+                <a href="profile.html" class="nav-link" aria-current="page">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+                  <span class="nav-label">Profile &amp; Badges</span>
+                </a>
+              </li>
+              <li>
+                <a href="settings.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+                  <span class="nav-label">Settings</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="profile.html" class="user-card mt-2">
+            <span class="avatar" aria-hidden="true">AM</span>
+            <span class="user-card-text">
+              <span class="block text-sm font-semibold text-gray-900">Alex M.</span>
+              <span class="block text-xs text-gray-500">Sync on</span>
+            </span>
+            <svg class="user-card-chevron size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+          <p class="mt-3 pb-1 text-center text-xs text-gray-500">Water Drink Reminder · Version 1.0.0</p>
+        </div>
+      </details>
+    </header>
+
+    <footer class="app-footer">
+      <p class="font-semibold tracking-[0.12em] uppercase">Water Drink Reminder</p>
+      <p class="mt-1">Version 1.0.0</p>
+    </footer>
+  </div>
+
+  <div class="app-body">
+    <main id="main" class="page">
+      <header class="page-header">
+        <h1 class="page-title">Profile &amp; Badges</h1>
+        <div class="flex gap-3">
+          <button type="button" class="btn btn-outline"><svg class="size-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/></svg>Sign out</button>
+          <button type="button" class="btn btn-primary"><svg class="size-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>Edit profile</button>
+        </div>
+      </header>
+
+      <div class="grid grid-cols-1 gap-8 xl:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] xl:gap-10">
+        <div class="flex flex-col gap-5">
+          <section class="card flex flex-col items-center px-4 py-8 text-center sm:px-8" aria-labelledby="profile-name">
+            <div class="relative">
+              <span class="avatar-lg" aria-hidden="true">AM</span>
+              <label class="icon-btn absolute right-0 bottom-0 size-9 border border-gray-400 bg-white has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-gray-900">
+                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+                <span class="sr-only">Upload a new avatar</span>
+                <input type="file" accept="image/png, image/jpeg, image/webp" class="sr-only">
+              </label>
+            </div>
+            <h2 id="profile-name" class="mt-4 text-2xl font-semibold">Alex M.</h2>
+            <p class="text-sm text-gray-600">@alex.m · member since <time datetime="2026-03">Mar 2026</time></p>
+            <dl class="mt-6 grid w-full grid-cols-3 gap-2 sm:gap-3">
+              <div class="stat"><dt>badges</dt><dd>5</dd></div>
+              <div class="stat"><dt>day best streak</dt><dd>42</dd></div>
+              <div class="stat"><dt>logged total</dt><dd>1&nbsp;240&nbsp;L</dd></div>
+            </dl>
+          </section>
+
+          <section class="card" aria-label="Account details">
+            <ul class="settings-group">
+              <li>
+                <button type="button" class="settings-row" aria-label="Change display name: Alex M.">
+                <svg class="settings-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span class="min-w-0 flex-1">
+                  <span class="block font-medium">Display name</span>
+                  <span class="block truncate text-sm text-gray-600">Alex M.</span>
+                </span>
+                <svg class="size-5 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="settings-row" aria-label="Change username: alex.m · used for invitations">
+                <svg class="settings-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"/></svg>
+                <span class="min-w-0 flex-1">
+                  <span class="block font-medium">Username</span>
+                  <span class="block truncate text-sm text-gray-600">alex.m · used for invitations</span>
+                </span>
+                <svg class="size-5 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+              </li>
+              <li>
+                <a href="groups.html" class="settings-row">
+                <svg class="settings-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span class="min-w-0 flex-1">
+                  <span class="block font-medium">Groups</span>
+                  <span class="block truncate text-sm text-gray-600">Family, Running club, Study group</span>
+                </span>
+                <svg class="size-5 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="badges @container" aria-labelledby="badges-title">
+          <div class="mb-4 flex flex-wrap items-center justify-between gap-3">
+            <h2 id="badges-title" class="text-lg font-semibold">Badges · 5 earned, 4 to go</h2>
+            <fieldset class="segmented w-full sm:w-auto">
+              <legend class="sr-only">Filter badges by type</legend>
+              <label class="segmented-option"><input type="radio" name="badge-type" id="badges-all" class="sr-only" checked>All</label>
+              <label class="segmented-option"><input type="radio" name="badge-type" id="badges-milestone" class="sr-only">Milestones</label>
+              <label class="segmented-option"><input type="radio" name="badge-type" id="badges-event" class="sr-only">Events</label>
+              <label class="segmented-option"><input type="radio" name="badge-type" id="badges-placement" class="sr-only">Placement</label>
+            </fieldset>
+          </div>
+          <ul class="grid grid-cols-1 gap-4 @xs:grid-cols-2 @xl:grid-cols-3">
+            <li class="badge-card" data-type="milestone">
+              <span class="badge-icon"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg></span>
+              <h3 class="badge-title font-semibold">7-day streak</h3>
+              <p class="mt-1 text-xs text-gray-600">Milestone · <time datetime="2026-04-14">14 Apr 2026</time></p>
+            </li>
+            <li class="badge-card" data-type="milestone">
+              <span class="badge-icon"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg></span>
+              <h3 class="badge-title font-semibold">30-day streak</h3>
+              <p class="mt-1 text-xs text-gray-600">Milestone · <time datetime="2026-05-09">9 May 2026</time></p>
+            </li>
+            <li class="badge-card" data-type="milestone">
+              <span class="badge-icon"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg></span>
+              <h3 class="badge-title font-semibold">First 100 L</h3>
+              <p class="mt-1 text-xs text-gray-600">Milestone · <time datetime="2026-06-02">2 Jun 2026</time></p>
+            </li>
+            <li class="badge-card" data-type="event">
+              <span class="badge-icon"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"/><path d="M11 12 5.12 2.2"/><path d="m13 12 5.88-9.8"/><path d="M8 7h8"/><circle cx="12" cy="17" r="5"/><path d="M12 18v-2h-.5"/></svg></span>
+              <h3 class="badge-title font-semibold">Summer 2026</h3>
+              <p class="mt-1 text-xs text-gray-600">Event · Family · <time datetime="2026-07-31">31 Jul 2026</time></p>
+            </li>
+            <li class="badge-card" data-type="placement">
+              <span class="badge-icon"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></span>
+              <h3 class="badge-title font-semibold">Top 3 · Autumn Cup</h3>
+              <p class="mt-1 text-xs text-gray-600">Placement · 2nd · <time datetime="2026-09-30">30 Sep 2026</time></p>
+            </li>
+            <li class="badge-card is-locked" data-type="milestone">
+              <span class="badge-icon"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+              <h3 class="badge-title font-semibold"><span class="sr-only">Locked: </span>100-day streak</h3>
+              <p class="mt-1 text-xs text-gray-600">Milestone · 42 / 100 days</p>
+            </li>
+            <li class="badge-card is-locked" data-type="milestone">
+              <span class="badge-icon"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+              <h3 class="badge-title font-semibold"><span class="sr-only">Locked: </span>1&nbsp;000 L</h3>
+              <p class="mt-1 text-xs text-gray-600">Milestone · 1&nbsp;240 / 1&nbsp;000 L · syncing</p>
+            </li>
+            <li class="badge-card is-locked" data-type="event">
+              <span class="badge-icon"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+              <h3 class="badge-title font-semibold"><span class="sr-only">Locked: </span>October Hydrator</h3>
+              <p class="mt-1 text-xs text-gray-600">Event · 11 / 20 days met</p>
+            </li>
+            <li class="badge-card is-locked" data-type="placement">
+              <span class="badge-icon"><svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+              <h3 class="badge-title font-semibold"><span class="sr-only">Locked: </span>Top 3 · Public event</h3>
+              <p class="mt-1 text-xs text-gray-600">Placement · top 3 in a public event</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <nav class="tab-bar" aria-label="Quick navigation">
+    <ul class="tab-bar-list">
+      <li>
+        <a href="index.html" class="tab-link">
+          <span class="tab-icon"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="statistics.html" class="tab-link">
+          <span class="tab-icon"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span>
+          Statistics
+        </a>
+      </li>
+      <li>
+        <a href="log.html" class="tab-link">
+          <span class="tab-icon"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg></span>
+          Log
+        </a>
+      </li>
+      <li>
+        <a href="settings.html" class="tab-link">
+          <span class="tab-icon"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          Settings
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>

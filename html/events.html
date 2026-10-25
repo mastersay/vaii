@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Events · Water Reminder</title>
+  <meta name="description" content="Public hydration events and private group races.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="flex min-h-dvh flex-col bg-white font-sans text-gray-900 antialiased">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <div class="app-sidebar">
+    <header class="app-header">
+      <a href="index.html" class="brand">
+        <svg class="size-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 10.1 5 12 5 15a7 7 0 0 0 7 7z"/></svg>
+        <span class="brand-name">Water Reminder</span>
+      </a>
+
+      <nav class="sidebar-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <span class="nav-label">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="statistics.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+              <span class="nav-label">Statistics</span>
+            </a>
+          </li>
+          <li>
+            <a href="log.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg>
+              <span class="nav-label">Log</span>
+            </a>
+          </li>
+          <li>
+            <a href="events.html" class="nav-link" aria-current="page">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              <span class="nav-label">Events</span>
+            </a>
+          </li>
+          <li>
+            <a href="groups.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <span class="nav-label">Groups</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+              <span class="nav-label">Profile &amp; Badges</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+              <span class="nav-label">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="profile.html" class="user-card hidden md:flex">
+        <span class="avatar" aria-hidden="true">AM</span>
+        <span class="user-card-text">
+          <span class="block text-sm font-semibold text-gray-900">Alex M.</span>
+          <span class="block text-xs text-gray-500">Sync on</span>
+        </span>
+        <svg class="user-card-chevron size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+      </a>
+
+      <details class="mobile-menu group">
+        <summary class="icon-btn">
+          <svg class="size-6 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+          <svg class="hidden size-6 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          <span class="sr-only">Menu</span>
+        </summary>
+        <div class="mobile-menu-panel">
+          <nav aria-label="Main menu">
+            <ul class="nav-list">
+              <li>
+                <a href="index.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  <span class="nav-label">Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="statistics.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+                  <span class="nav-label">Statistics</span>
+                </a>
+              </li>
+              <li>
+                <a href="log.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg>
+                  <span class="nav-label">Log</span>
+                </a>
+              </li>
+              <li>
+                <a href="events.html" class="nav-link" aria-current="page">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                  <span class="nav-label">Events</span>
+                </a>
+              </li>
+              <li>
+                <a href="groups.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  <span class="nav-label">Groups</span>
+                </a>
+              </li>
+              <li>
+                <a href="profile.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+                  <span class="nav-label">Profile &amp; Badges</span>
+                </a>
+              </li>
+              <li>
+                <a href="settings.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+                  <span class="nav-label">Settings</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="profile.html" class="user-card mt-2">
+            <span class="avatar" aria-hidden="true">AM</span>
+            <span class="user-card-text">
+              <span class="block text-sm font-semibold text-gray-900">Alex M.</span>
+              <span class="block text-xs text-gray-500">Sync on</span>
+            </span>
+            <svg class="user-card-chevron size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+          <p class="mt-3 pb-1 text-center text-xs text-gray-500">Water Drink Reminder · Version 1.0.0</p>
+        </div>
+      </details>
+    </header>
+
+    <footer class="app-footer">
+      <p class="font-semibold tracking-[0.12em] uppercase">Water Drink Reminder</p>
+      <p class="mt-1">Version 1.0.0</p>
+    </footer>
+  </div>
+
+  <div class="app-body">
+    <main id="main" class="page">
+      <div class="events">
+        <header class="page-header">
+          <h1 class="page-title">Events</h1>
+          <div class="flex w-full items-center gap-3 sm:w-auto">
+            <fieldset class="segmented flex-1 sm:flex-none">
+              <legend class="sr-only">Show events from</legend>
+              <label class="segmented-option"><input type="radio" name="scope" id="scope-all" class="sr-only" checked>All</label>
+              <label class="segmented-option"><input type="radio" name="scope" id="scope-public" class="sr-only">Public</label>
+              <label class="segmented-option"><input type="radio" name="scope" id="scope-groups" class="sr-only">My groups</label>
+            </fieldset>
+            <button type="button" class="btn btn-primary px-3 sm:px-4">
+              <svg class="size-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+              <span class="max-sm:sr-only">Create race</span>
+            </button>
+          </div>
+        </header>
+
+        <fieldset class="tabs">
+          <legend class="sr-only">Filter by status</legend>
+          <label class="tab"><input type="radio" name="status" id="status-all" class="sr-only" checked>All (7)</label>
+          <label class="tab"><input type="radio" name="status" id="status-active" class="sr-only">Active (2)</label>
+          <label class="tab"><input type="radio" name="status" id="status-upcoming" class="sr-only">Upcoming (2)</label>
+          <label class="tab"><input type="radio" name="status" id="status-finished" class="sr-only">Finished (3)</label>
+        </fieldset>
+
+        <section class="mt-8" data-status="active" aria-labelledby="active-title">
+          <h2 id="active-title" class="section-label mb-4">Active now</h2>
+          <div class="grid grid-cols-1 gap-5 xl:grid-cols-2">
+            <article class="event-card" data-scope="public" aria-labelledby="october-hydration-title">
+              <div class="flex items-start gap-4">
+                <span class="icon-circle"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"/><path d="M11 12 5.12 2.2"/><path d="m13 12 5.88-9.8"/><path d="M8 7h8"/><circle cx="12" cy="17" r="5"/><path d="M12 18v-2h-.5"/></svg></span>
+                <div class="min-w-0 flex-1">
+                  <h3 id="october-hydration-title" class="text-lg leading-snug font-semibold">October Hydration Challenge</h3>
+                  <p class="mt-0.5 text-sm text-gray-600">Public · <time datetime="2026-10-01">1</time> – <time datetime="2026-10-31">31 Oct 2026</time></p>
+                </div>
+                <span class="pill pill-live">Live</span>
+              </div>
+              <ul class="event-meta">
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Days goal met · 20 of 31 to complete</li>
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>48 participants</li>
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Joined · Rank #4</li>
+              </ul>
+              <div class="event-actions">
+                <button type="button" class="btn btn-outline" aria-describedby="october-hydration-title">View details</button>
+                <button type="button" class="btn btn-outline" aria-describedby="october-hydration-title">Leave</button>
+              </div>
+            </article>
+            <article class="event-card" data-scope="group" aria-labelledby="family-weekend-title">
+              <div class="flex items-start gap-4">
+                <span class="icon-circle"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"/><path d="M11 12 5.12 2.2"/><path d="m13 12 5.88-9.8"/><path d="M8 7h8"/><circle cx="12" cy="17" r="5"/><path d="M12 18v-2h-.5"/></svg></span>
+                <div class="min-w-0 flex-1">
+                  <h3 id="family-weekend-title" class="text-lg leading-snug font-semibold">Family weekend streak</h3>
+                  <p class="mt-0.5 text-sm text-gray-600">Family · <time datetime="2026-10-17">17</time> – <time datetime="2026-10-19">19 Oct 2026</time></p>
+                </div>
+                <span class="pill pill-live">Live</span>
+              </div>
+              <ul class="event-meta">
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Longest streak · 3 days to complete</li>
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>4 participants</li>
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Joined · Rank #1</li>
+              </ul>
+              <div class="event-actions">
+                <button type="button" class="btn btn-outline" aria-describedby="family-weekend-title">View details</button>
+                <button type="button" class="btn btn-outline" aria-describedby="family-weekend-title">Leave</button>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="mt-8" data-status="upcoming" aria-labelledby="upcoming-title">
+          <h2 id="upcoming-title" class="section-label mb-4">Upcoming</h2>
+          <div class="grid grid-cols-1 gap-5 xl:grid-cols-2">
+            <article class="event-card" data-scope="public" aria-labelledby="november-no-soda-title">
+              <div class="flex items-start gap-4">
+                <span class="icon-circle"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"/><path d="M11 12 5.12 2.2"/><path d="m13 12 5.88-9.8"/><path d="M8 7h8"/><circle cx="12" cy="17" r="5"/><path d="M12 18v-2h-.5"/></svg></span>
+                <div class="min-w-0 flex-1">
+                  <h3 id="november-no-soda-title" class="text-lg leading-snug font-semibold">November No-Soda</h3>
+                  <p class="mt-0.5 text-sm text-gray-600">Public · <time datetime="2026-11-01">1</time> – <time datetime="2026-11-30">30 Nov 2026</time></p>
+                </div>
+                <span class="pill pill-muted">Upcoming</span>
+              </div>
+              <ul class="event-meta">
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Days goal met · 25 of 30 to complete</li>
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>12 participants</li>
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Starts in 14 days</li>
+              </ul>
+              <div class="event-actions">
+                <button type="button" class="btn btn-outline" aria-describedby="november-no-soda-title">View details</button>
+                <button type="button" class="btn btn-primary" aria-describedby="november-no-soda-title">Join</button>
+              </div>
+            </article>
+            <article class="event-card" data-scope="group" aria-labelledby="office-race-title">
+              <div class="flex items-start gap-4">
+                <span class="icon-circle"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"/><path d="M11 12 5.12 2.2"/><path d="m13 12 5.88-9.8"/><path d="M8 7h8"/><circle cx="12" cy="17" r="5"/><path d="M12 18v-2h-.5"/></svg></span>
+                <div class="min-w-0 flex-1">
+                  <h3 id="office-race-title" class="text-lg leading-snug font-semibold">Office hydration race</h3>
+                  <p class="mt-0.5 text-sm text-gray-600">Work friends · <time datetime="2026-11-01">1</time> – <time datetime="2026-11-15">15 Nov 2026</time></p>
+                </div>
+                <span class="pill pill-muted">Upcoming</span>
+              </div>
+              <ul class="event-meta">
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Longest streak · 7 days to complete</li>
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>9 participants</li>
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Invite only</li>
+              </ul>
+              <div class="event-actions">
+                <button type="button" class="btn btn-outline" aria-describedby="office-race-title">View details</button>
+                <button type="button" class="btn btn-primary" aria-describedby="office-race-title">Join</button>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="mt-8" data-status="finished" aria-labelledby="finished-title">
+          <h2 id="finished-title" class="section-label mb-4">Finished</h2>
+          <div class="grid grid-cols-1 gap-5 xl:grid-cols-2">
+            <article class="event-card" data-scope="public" aria-labelledby="autumn-cup-title">
+              <div class="flex items-start gap-4">
+                <span class="icon-circle"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"/><path d="M11 12 5.12 2.2"/><path d="m13 12 5.88-9.8"/><path d="M8 7h8"/><circle cx="12" cy="17" r="5"/><path d="M12 18v-2h-.5"/></svg></span>
+                <div class="min-w-0 flex-1">
+                  <h3 id="autumn-cup-title" class="text-lg leading-snug font-semibold">Autumn Cup</h3>
+                  <p class="mt-0.5 text-sm text-gray-600">Public · <time datetime="2026-09-01">1</time> – <time datetime="2026-09-30">30 Sep 2026</time></p>
+                </div>
+                <span class="pill pill-muted">Finished</span>
+              </div>
+              <ul class="event-meta">
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Days goal met · 24 of 30 to complete</li>
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>63 participants</li>
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>Completed · Rank #2 · badge earned</li>
+              </ul>
+              <div class="event-actions">
+                <button type="button" class="btn btn-outline" aria-describedby="autumn-cup-title">View results</button>
+              </div>
+            </article>
+            <article class="event-card" data-scope="group" aria-labelledby="back-to-school-title">
+              <div class="flex items-start gap-4">
+                <span class="icon-circle"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"/><path d="M11 12 5.12 2.2"/><path d="m13 12 5.88-9.8"/><path d="M8 7h8"/><circle cx="12" cy="17" r="5"/><path d="M12 18v-2h-.5"/></svg></span>
+                <div class="min-w-0 flex-1">
+                  <h3 id="back-to-school-title" class="text-lg leading-snug font-semibold">Back to school week</h3>
+                  <p class="mt-0.5 text-sm text-gray-600">Study group · <time datetime="2026-09-01">1</time> – <time datetime="2026-09-07">7 Sep 2026</time></p>
+                </div>
+                <span class="pill pill-muted">Finished</span>
+              </div>
+              <ul class="event-meta">
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Longest streak · 7 days to complete</li>
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>6 participants</li>
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Not completed · Rank #4</li>
+              </ul>
+              <div class="event-actions">
+                <button type="button" class="btn btn-outline" aria-describedby="back-to-school-title">View results</button>
+              </div>
+            </article>
+            <article class="event-card" data-scope="group" aria-labelledby="summer-2026-title">
+              <div class="flex items-start gap-4">
+                <span class="icon-circle"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"/><path d="M11 12 5.12 2.2"/><path d="m13 12 5.88-9.8"/><path d="M8 7h8"/><circle cx="12" cy="17" r="5"/><path d="M12 18v-2h-.5"/></svg></span>
+                <div class="min-w-0 flex-1">
+                  <h3 id="summer-2026-title" class="text-lg leading-snug font-semibold">Summer 2026</h3>
+                  <p class="mt-0.5 text-sm text-gray-600">Family · <time datetime="2026-07-01">1</time> – <time datetime="2026-07-31">31 Jul 2026</time></p>
+                </div>
+                <span class="pill pill-muted">Finished</span>
+              </div>
+              <ul class="event-meta">
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Days goal met · 25 of 31 to complete</li>
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>4 participants</li>
+                <li><svg class="size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>Completed · Rank #1 · badge earned</li>
+              </ul>
+              <div class="event-actions">
+                <button type="button" class="btn btn-outline" aria-describedby="summer-2026-title">View results</button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <nav class="tab-bar" aria-label="Quick navigation">
+    <ul class="tab-bar-list">
+      <li>
+        <a href="index.html" class="tab-link">
+          <span class="tab-icon"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="statistics.html" class="tab-link">
+          <span class="tab-icon"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span>
+          Statistics
+        </a>
+      </li>
+      <li>
+        <a href="log.html" class="tab-link">
+          <span class="tab-icon"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg></span>
+          Log
+        </a>
+      </li>
+      <li>
+        <a href="settings.html" class="tab-link">
+          <span class="tab-icon"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          Settings
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>

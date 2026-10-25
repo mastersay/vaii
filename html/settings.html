@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Settings · Water Reminder</title>
+  <meta name="description" content="Goal, reminders, drinks, appearance and data settings.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="flex min-h-dvh flex-col bg-white font-sans text-gray-900 antialiased">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <div class="app-sidebar">
+    <header class="app-header">
+      <a href="index.html" class="brand">
+        <svg class="size-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 10.1 5 12 5 15a7 7 0 0 0 7 7z"/></svg>
+        <span class="brand-name">Water Reminder</span>
+      </a>
+
+      <nav class="sidebar-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <span class="nav-label">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="statistics.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+              <span class="nav-label">Statistics</span>
+            </a>
+          </li>
+          <li>
+            <a href="log.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg>
+              <span class="nav-label">Log</span>
+            </a>
+          </li>
+          <li>
+            <a href="events.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              <span class="nav-label">Events</span>
+            </a>
+          </li>
+          <li>
+            <a href="groups.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <span class="nav-label">Groups</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" class="nav-link">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+              <span class="nav-label">Profile &amp; Badges</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" class="nav-link" aria-current="page">
+              <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+              <span class="nav-label">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="profile.html" class="user-card hidden md:flex">
+        <span class="avatar" aria-hidden="true">AM</span>
+        <span class="user-card-text">
+          <span class="block text-sm font-semibold text-gray-900">Alex M.</span>
+          <span class="block text-xs text-gray-500">Sync on</span>
+        </span>
+        <svg class="user-card-chevron size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+      </a>
+
+      <details class="mobile-menu group">
+        <summary class="icon-btn">
+          <svg class="size-6 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+          <svg class="hidden size-6 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          <span class="sr-only">Menu</span>
+        </summary>
+        <div class="mobile-menu-panel">
+          <nav aria-label="Main menu">
+            <ul class="nav-list">
+              <li>
+                <a href="index.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  <span class="nav-label">Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="statistics.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+                  <span class="nav-label">Statistics</span>
+                </a>
+              </li>
+              <li>
+                <a href="log.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg>
+                  <span class="nav-label">Log</span>
+                </a>
+              </li>
+              <li>
+                <a href="events.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                  <span class="nav-label">Events</span>
+                </a>
+              </li>
+              <li>
+                <a href="groups.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  <span class="nav-label">Groups</span>
+                </a>
+              </li>
+              <li>
+                <a href="profile.html" class="nav-link">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+                  <span class="nav-label">Profile &amp; Badges</span>
+                </a>
+              </li>
+              <li>
+                <a href="settings.html" class="nav-link" aria-current="page">
+                  <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+                  <span class="nav-label">Settings</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="profile.html" class="user-card mt-2">
+            <span class="avatar" aria-hidden="true">AM</span>
+            <span class="user-card-text">
+              <span class="block text-sm font-semibold text-gray-900">Alex M.</span>
+              <span class="block text-xs text-gray-500">Sync on</span>
+            </span>
+            <svg class="user-card-chevron size-4 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+          <p class="mt-3 pb-1 text-center text-xs text-gray-500">Water Drink Reminder · Version 1.0.0</p>
+        </div>
+      </details>
+    </header>
+
+    <footer class="app-footer">
+      <p class="font-semibold tracking-[0.12em] uppercase">Water Drink Reminder</p>
+      <p class="mt-1">Version 1.0.0</p>
+    </footer>
+  </div>
+
+  <div class="app-body">
+    <main id="main" class="page">
+      <header class="page-header">
+        <h1 class="page-title">Settings</h1>
+      </header>
+
+      <div class="grid max-w-5xl grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-10">
+        <div class="flex flex-col gap-8">
+          <section aria-labelledby="profile-goal-title">
+            <div class="mb-3 flex min-h-8 items-center justify-between gap-3 px-1">
+              <h2 id="profile-goal-title" class="section-label">Profile &amp; Goal</h2>
+              <button type="button" class="icon-btn size-8" aria-label="Edit profile and goal"><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg></button>
+            </div>
+            <button type="button" class="goal-card">
+              <span class="flex-1">
+                <span class="section-label block text-gray-300">Target volume</span>
+                <span class="mt-1 block text-4xl font-bold tracking-tight">2&nbsp;500&nbsp;ml</span>
+                <span class="mt-2 block text-sm text-gray-300">Personalized for your activity &amp; weather</span>
+              </span>
+              <svg class="size-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </section>
+
+          <section id="reminders" aria-labelledby="reminders-title">
+            <div class="mb-3 flex min-h-8 items-center justify-between gap-3 px-1">
+              <h2 id="reminders-title" class="section-label">Reminders</h2>
+            </div>
+            <div class="settings-group">
+              <div class="settings-row">
+                <span class="icon-circle size-11"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg></span>
+                <div class="min-w-0 flex-1">
+                  <label for="reminders-enabled" class="block font-medium">Daily Reminders</label>
+                  <p id="reminders-description" class="text-sm text-gray-600">Gentle nudges to keep you hydrated</p>
+                </div>
+                <input type="checkbox" role="switch" id="reminders-enabled" class="switch" aria-describedby="reminders-description" checked>
+              </div>
+              <div class="flex flex-col gap-3 py-4 min-[360px]:flex-row">
+                <div class="time-field">
+                  <label for="reminder-start" class="section-label text-[0.6875rem]">Start time</label>
+                  <input type="time" id="reminder-start" class="time-input" value="08:00">
+                </div>
+                <div class="time-field">
+                  <label for="reminder-end" class="section-label text-[0.6875rem]">End time</label>
+                  <input type="time" id="reminder-end" class="time-input" value="22:00">
+                </div>
+              </div>
+              <div class="settings-row">
+                <svg class="settings-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 2h4"/><path d="m12 14 3-3"/><circle cx="12" cy="14" r="8"/></svg>
+                <div class="min-w-0 flex-1">
+                  <label for="reminder-frequency" class="block font-medium">Frequency</label>
+                  <select id="reminder-frequency" class="select-inline">
+                    <option>Every 30 min</option>
+                    <option>Every 1 h</option>
+                    <option>Every 1.5 h</option>
+                    <option selected>Every 2 h</option>
+                    <option>Every 3 h</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="account-sync-title">
+            <div class="mb-3 flex min-h-8 items-center justify-between gap-3 px-1">
+              <h2 id="account-sync-title" class="section-label">Account &amp; Sync</h2>
+            </div>
+            <div class="settings-group">
+              <div class="settings-row">
+                <span class="avatar size-11">AM</span>
+                <div class="min-w-0 flex-1">
+                  <p class="font-medium">Alex M.</p>
+                  <p class="truncate text-sm text-gray-600">@alex.m · signed in</p>
+                </div>
+                <a href="profile.html" class="btn btn-outline px-3 py-2">Profile</a>
+              </div>
+              <div class="settings-row">
+                <svg class="settings-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+                <div class="min-w-0 flex-1">
+                  <label for="sync-enabled" class="block font-medium">Sync across devices</label>
+                  <p id="sync-description" class="text-sm text-gray-600">Last synced today at <time datetime="2026-10-18T13:06">13:06</time></p>
+                </div>
+                <input type="checkbox" role="switch" id="sync-enabled" class="switch" aria-describedby="sync-description" checked>
+              </div>
+              <button type="button" class="settings-row">
+                <svg class="settings-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/></svg>
+                <span class="flex-1 font-medium">Sign out</span>
+                <svg class="size-5 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </div>
+          </section>
+        </div>
+        <div class="flex flex-col gap-8">
+          <section aria-labelledby="hydration-library-title">
+            <div class="mb-3 flex min-h-8 items-center justify-between gap-3 px-1">
+              <h2 id="hydration-library-title" class="section-label">Hydration Library</h2>
+            </div>
+            <div class="settings-group">
+              <div class="settings-row">
+                <svg class="settings-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8"/><path d="M5 8h14"/><path d="M7 15a6.47 6.47 0 0 1 5 0 6.47 6.47 0 0 0 5 0"/><path d="m12 8 1-6h2"/></svg>
+                <div class="min-w-0 flex-1">
+                  <p class="font-medium">Manage Drinks</p>
+                  <p class="text-sm text-gray-600">6 active presets</p>
+                </div>
+                <button type="button" class="-me-2 rounded-lg px-2 py-1 text-xs font-semibold tracking-[0.12em] uppercase hover:bg-gray-200">View all</button>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="general-title">
+            <div class="mb-3 flex min-h-8 items-center justify-between gap-3 px-1">
+              <h2 id="general-title" class="section-label">General</h2>
+            </div>
+            <div class="settings-group">
+              <div class="settings-row">
+                <svg class="settings-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 8a2.83 2.83 0 0 0 4 4 4 4 0 1 1-4-4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.9 4.9 1.4 1.4"/><path d="m17.7 17.7 1.4 1.4"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.3 17.7-1.4 1.4"/><path d="m19.1 4.9-1.4 1.4"/></svg>
+                <div class="min-w-0 flex-1">
+                  <label for="theme" class="block font-medium">Theme</label>
+                  <select id="theme" class="select-inline">
+                    <option selected>System Default</option>
+                    <option>Light</option>
+                    <option>Dark</option>
+                  </select>
+                </div>
+              </div>
+              <div class="settings-row">
+                <svg class="settings-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg>
+                <div class="min-w-0 flex-1">
+                  <label for="units" class="block font-medium">Units</label>
+                  <select id="units" class="select-inline">
+                    <option selected>ML (Milliliters)</option>
+                    <option>OZ (Fluid ounces)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="settings-row">
+                <svg class="settings-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+                <div class="min-w-0 flex-1">
+                  <label for="week-start" class="block font-medium">Week Starts On</label>
+                  <select id="week-start" class="select-inline">
+                    <option selected>Monday</option>
+                    <option>Sunday</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="privacy-data-title">
+            <div class="mb-3 flex min-h-8 items-center justify-between gap-3 px-1">
+              <h2 id="privacy-data-title" class="section-label">Privacy &amp; Data</h2>
+            </div>
+            <div class="settings-group">
+              <button type="button" class="settings-row">
+                <svg class="settings-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+                <span class="flex-1 font-medium">Export Hydration History</span>
+                <svg class="size-5 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+              <label class="settings-row has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-gray-900">
+                <svg class="settings-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m17 8-5-5-5 5"/><path d="M12 3v12"/></svg>
+                <span class="flex-1 font-medium">Import Data</span>
+                <svg class="size-5 shrink-0 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+                <input type="file" accept=".json,application/json" class="sr-only">
+              </label>
+              <button type="button" class="settings-row">
+                <svg class="settings-row-icon text-red-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
+                <span class="flex-1 font-medium text-red-700">Reset All Data</span>
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <nav class="tab-bar" aria-label="Quick navigation">
+    <ul class="tab-bar-list">
+      <li>
+        <a href="index.html" class="tab-link">
+          <span class="tab-icon"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="statistics.html" class="tab-link">
+          <span class="tab-icon"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span>
+          Statistics
+        </a>
+      </li>
+      <li>
+        <a href="log.html" class="tab-link">
+          <span class="tab-icon"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg></span>
+          Log
+        </a>
+      </li>
+      <li>
+        <a href="settings.html" class="tab-link" aria-current="page">
+          <span class="tab-icon"><svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          Settings
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>

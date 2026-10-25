@@ -1,0 +1,13 @@
+{
+  "name": "water-drink-reminder-html",
+  "private": true,
+  "description": "Static HTML and CSS layout of Water Drink Reminder",
+  "scripts": {
+    "build:css": "tailwindcss -i src/tailwind.css -o css/styles.css",
+    "watch:css": "tailwindcss -i src/tailwind.css -o css/styles.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.3",
+    "tailwindcss": "4.3.3"
+  }
+}
